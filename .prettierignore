@@ -1,0 +1,11 @@
+# ==============================================================================
+# This file disables Prettier from auto-formatting source code in this
+# source control repository. This is a fail-safe in case developers have
+# Prettier installed globally and IDE extensions enabled, such as Prettier for
+# VS Code. Such toolchains can result in undesirable refactoring of whole files
+# whenever any changes are saved.
+#
+# https://prettier.io/docs/en/ignore.html
+# ==============================================================================
+
+*
