@@ -1,6 +1,17 @@
 :doctype: book
+:hide-uri-scheme:
+:tip-caption: 💡
 
 image::https://raw.githubusercontent.com/hacksjs/logos/main/dist/hacksjs-logotype--450x150.svg?sanitize=true[]
+
+image:https://img.shields.io/github/issues/hacksjs/universal.svg?style=for-the-badge&label=Issues&labelColor=EEEEEE&color=E6E6E6&maxAge=3600[title="Issues",link="https://github.com/hacksjs/universal/issues"] image:https://img.shields.io/github/issues-pr/hacksjs/universal.svg?style=for-the-badge&label=Pull%20Requests&labelColor=EEEEEE&color=E6E6E6&maxAge=3600[title="Pull Requests",link="https://github.com/hacksjs/universal/pulls"]
+
+////
+TODO: Add build badge:
+image:https://img.shields.io/travis/com/hacksjs/universal/latest/dev?style=for-the-badge&labelColor=EEEEEE&color=E6E6E6[title="Build",link="https://travis-ci.com/github/hacksjs/universal"]
+TODO: Add test coverage badge:
+[![Test Coverage](https://codecov.io/gh/hacksjs/universal/branch/main/graph/badge.svg)](https://codecov.io/gh/hacksjs/universal)
+////
 
 = @hacksjs/universal
 
