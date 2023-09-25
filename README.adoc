@@ -1,1 +1,14 @@
-= `@hacksjs/universal`
+:doctype: book
+
+image::https://raw.githubusercontent.com/hacksjs/logos/main/dist/hacksjs-logotype--450x150.svg?sanitize=true[]
+
+= @hacksjs/universal
+
+== Documentation
+
+////
+TODO
+////
+
+''''
+Copyright © Kieran Potts and contributors — link:./LICENSE.txt[MIT license]
