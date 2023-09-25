@@ -9,3 +9,21 @@
 # GitHub provides a collection of useful `.gitignore` templates for a variety of
 # software stacks here: https://github.com/github/gitignore
 # ==============================================================================
+
+# Build artifacts.
+dist/*
+
+# ... but keep the "keep" file.
+!dist/.keep
+
+# Vendor dependencies.
+node_modules/*
+
+# Log output.
+*.log
+
+# Devtool caches.
+.eslintcache
+
+# Reports.
+coverage/*
