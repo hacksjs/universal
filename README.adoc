@@ -2,7 +2,7 @@
 :hide-uri-scheme:
 :tip-caption: 💡
 
-image::https://raw.githubusercontent.com/hacksjs/logos/main/dist/hacksjs-logotype--450x150.svg?sanitize=true[]
+image::https://raw.githubusercontent.com/hacksjs/logos/main/dist/hacksjs-logotype--readme.svg[]
 
 image:https://img.shields.io/github/issues/hacksjs/universal.svg?style=for-the-badge&label=Issues&labelColor=EEEEEE&color=E6E6E6&maxAge=3600[title="Issues",link="https://github.com/hacksjs/universal/issues"] image:https://img.shields.io/github/issues-pr/hacksjs/universal.svg?style=for-the-badge&label=Pull%20Requests&labelColor=EEEEEE&color=E6E6E6&maxAge=3600[title="Pull Requests",link="https://github.com/hacksjs/universal/pulls"]
 
