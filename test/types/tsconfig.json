@@ -1,0 +1,20 @@
+{
+  /*
+
+  This TS configuration is prioritized by `tsd-lite` when it uses `tsc` to
+  parse test files.
+
+  https://github.com/jest-community/jest-runner-tsd#configuration
+
+  */
+
+  "compilerOptions": {
+
+    // We must disable strict mode in the TypeScript compiler, due to the
+    // `*.test-d.ts` consuming plain JS files without strict typing, which
+    // in turn results in irrelevant errors being logged in the test output.
+    "strict": false
+
+  }
+
+}

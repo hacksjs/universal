@@ -1,0 +1,44 @@
+{
+  "name": "@hacksjs/universal",
+  "version": "0.0.0-alpha.0",
+  "description": "Pure ECMAScript utility functions that encourage a functional programming style",
+  "keywords": [
+    "arity",
+    "compose",
+    "curry",
+    "ecmascript",
+    "es",
+    "errors",
+    "exceptions",
+    "functional",
+    "helpers",
+    "iterator",
+    "lambda",
+    "utilities"
+  ],
+  "author": "Kieran Potts <hello@kieranpotts.com>",
+  "contributors": [],
+  "license": "MIT",
+  "homepage": "https://www.npmjs.com/package/@hacksjs/universal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hacksjs/universal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hacksjs/universal/issues"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "engines": {},
+  "type": "module",
+  "bin": {},
+  "exports": {
+    "./errors":  "./lib/errors/index.js",
+    "./objects":  "./lib/objects/index.js"
+  },
+  "dependencies": {},
+  "peerDependencies": {}
+}

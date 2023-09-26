@@ -1,0 +1,9 @@
+= Tests
+
+This directory contains automated test scripts.
+
+Currently, there are three categories of automated tests:
+
+* *Unit* tests, which verify the behavior of individual functions and classes.
+* *Integration* tests, which verify expected behaviors when multiple functions are used together in a pipeline.
+* *Types* tests, which verify the correctness of the dynamically-generated *.d.ts files.
