@@ -1,7 +1,7 @@
-= Hacks.js Documentation
+= Hacks.js User Documentation
 
 ////
 :navtitle: Welcome
 ////
 
-This is the landing page for the Hacks.js documentation site.
+This is the landing page for the Hacks.js User Documentation site.

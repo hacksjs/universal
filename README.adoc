@@ -19,7 +19,7 @@ This repository encapsulates the source code and automation scripts for building
 
 == Documentation
 
-For usage instructions and API documentation for this and other Hacks.js packages, see the https://docs.hacksjs.com[Hacks.js Documentation] web site.
+For usage instructions and API documentation for this and other Hacks.js packages, see the https://docs.hacksjs.com[Hacks.js User Documentation] web site.
 
 If you would like to report issues or suggest improvements, or otherwise contribute to the Hacks.js project, please refer to the https://github.com/hacksjs/dev[Hacks.js Developer Documentation] repository.
 

@@ -14,7 +14,7 @@ pnpm add @hacksjs/universal
 
 ## Documentation
 
-For usage instructions and API documentation for this and other Hacks.js packages, see the [Hacks.js Documentation](https://docs.hacksjs.com) web site.
+For usage instructions and API documentation for this and other Hacks.js packages, see the [Hacks.js User Documentation](https://docs.hacksjs.com) web site.
 
 ## Contributing
 
