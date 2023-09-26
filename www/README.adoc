@@ -1,0 +1,7 @@
+= Content for the hacksjs.com web site
+
+This directory encapsulates the primary content for the https://docs.hacksjs.com/[Hacks.js Developer Documentation] web site.
+
+The https://github.com/hacksjs/docs.hacksjs.com[hacksjs/docs.hacksjs.com] repository contains the code and configuration to build and deploy the web site. https://antora.org/[Antora], a specialist static site generator for documentation sites, is used for this purpose. In the build process, this repository is cloned and the contents of the `www` directory are parsed and used to compile the web site content.
+
+For documentation on the required structured and configuration of this directory, see the https://docs.antora.org/antora/latest/organize-content-files/[Antora docs].

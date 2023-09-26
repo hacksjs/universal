@@ -1,0 +1,18 @@
+# This is a "component version descriptor file" for Antora. This file must
+# be included in the root (or "start path") of every content source (or
+# "component") in an Antora playbook.
+#
+# https://docs.antora.org/antora/latest/component-version-descriptor/
+# https://docs.antora.org/antora/latest/component-version/
+
+name: home
+title: Home
+
+# TODO: This content source is currently non-versioned, but this MUST be changed
+# to "1" when Hacks.js is out-of-beta.
+# https://docs.antora.org/antora/latest/component-version-key/#key
+version: ~
+#prerelease: -alpha.0
+
+nav:
+- modules/ROOT/nav.adoc
