@@ -1,0 +1,37 @@
+{
+  /*
+
+  We use the TypeScript compiler to generate .d.ts from plain JavaScript files,
+  with types inferred from code and data explicitly encoded in JSDoc notation.
+
+  https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html
+  https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html#supported-jsdoc
+
+  */
+
+  "include": ["src/**/*"],
+
+  "compilerOptions": {
+
+    // Read standard JavaScript files.
+    "allowJs": true,
+
+    // Generate d.ts files alongside compiled artifacts.
+    "declaration": true,
+
+    // Use the TypeScript compiler to ONLY generate d.ts files.
+    // We use Babel for everything else.
+    "emitDeclarationOnly": true,
+
+    // The target destination of the built *.d.ts files MUST be set dynamically
+    // via the CLI on a per-package basis.
+    // "outDir": "",
+
+    // DO NOT add source maps. This can be toggled on temporarily in development
+    // environments. Including source maps in the build will mean that IDE
+    // features such as "go to definition" will point to the original JavaScript
+    // source files, which can be useful for debugging.
+    "declarationMap": false
+  }
+
+}
