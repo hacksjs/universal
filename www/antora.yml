@@ -5,13 +5,13 @@
 # https://docs.antora.org/antora/latest/component-version-descriptor/
 # https://docs.antora.org/antora/latest/component-version/
 
-name: home
-title: Home
+name: universal
+title: '@hacksjs/universal'
 
 # TODO: This content source is currently non-versioned, but this MUST be changed
-# to "1" when Hacks.js is out-of-beta.
+# to "1" when Hacks.js is out of pre-release beta.
 # https://docs.antora.org/antora/latest/component-version-key/#key
-version: ~
+version: 'v0'
 #prerelease: -alpha.0
 
 nav:
