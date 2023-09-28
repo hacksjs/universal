@@ -1,3 +1,8 @@
 ////
 * xref:index.adoc[]
 ////
+
+* xref:installation.adoc[]
+* xref:release-notes.adoc[]
+* xref:requirements.adoc[]
+* xref:usage.adoc[]

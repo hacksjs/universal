@@ -1,0 +1,24 @@
+= Usage
+
+There are no default exports for the package. You must specify the module to import by appending a path to the `@hacksjs/universal` module name. For example, to import components from the `errors` module:
+
+[source,js]
+----
+// Import the entire module.
+import * as err from '@hacksjs/universal/errors'
+
+// Or import only what you need.
+import { CustomError, ServerError } from '@hacksjs/universal/errors'
+----
+
+The `@hacksjs/universal` package exports ECMAScript Module (ESM) files only. Node's legacy proprietary CommonJS-based module system is not supported. Thus, we support only the `import` of modules from this package, not the use of `require()`. This (probably) will not work:
+
+[source,js]
+----
+const err = require('@hacksjs/universal/errors')
+
+const CustomError = err.CustomError
+const CustomError = err.CustomError
+----
+
+If your application needs to consume non-standard module formats such as CommonJS, you will need to introduce a build step to transpile Hacks.js ES modules to your required format.

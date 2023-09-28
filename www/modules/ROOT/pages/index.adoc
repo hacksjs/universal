@@ -4,4 +4,8 @@
 :navtitle: Welcome
 ////
 
-This is the landing page for user-facing documentation for the `@hacksjs/universal` package.
+This package is a collection of pure ECMAScript and universal JavaScript (aka isomorphic JavaScript) utility functions. Everything in this package is compatible with every major modern JavaScript runtime environment, including — but not limited to — web browsers and Node.
+
+A small number of functions use host-specific APIs — such as Node.js and web platform APIs — where available, but always with pure-ES fallbacks to ensure universal compatibility with all modern JavaScript runtime environments.
+
+As with other Hacks.js packages, this package is full typed, shipping with complete type definitions for compatibility with TypeScript applications.

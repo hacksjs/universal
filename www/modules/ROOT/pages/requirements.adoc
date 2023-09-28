@@ -1,0 +1,27 @@
+= Requirements
+
+////
+
+Officially, this package supports the following LTS releases of Node:
+
+- ^14.15.0
+- ^16.13.0
+- ^18.12.0
+
+This is a hybrid package, exporting it's modules in both ECMAScript Modules and CommonJS Module notations.
+
+The bundled web artifact is compatible with all modern web browsers.
+
+-----
+
+== Requirements
+
+This is a universal JavaScript package for use in web browsers and [Node](https://nodejs.org/en/).
+
+TODO: I think this will be scrapped:
+
+The package's modules can be imported directly into applications running in Node >= 10.15.3. The package also contains a pre-assembled bundle for direct import into web pages. Go to [browserl.ist](https://browserl.ist/?q=%3E%3D+0.1%25+OR+last+2+major+versions+OR+Firefox+ESR+OR+unreleased+versions+OR+not+dead) to see which browsers are supported by the web bundle.
+
+The pre-assembled web bundle is handy for prototyping web sites and web apps. For production, it is recommended that you create a custom bundle using Rollup or Webpack or any equivalent build tool. <!-- TODO: You might like to try [`@hacksjs/make`](https://github.com/hacksjs/make), a convenient wrapper for Rollup, Babel and PostCSS that provides a minimal API to bundle JavaScript and CSS for use in web browsers.-->
+
+////

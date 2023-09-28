@@ -1,0 +1,13 @@
+= Installation
+
+Use your package manager to install this package. For example, to install the `@hacksjs/universal` package, run one of these commands from your project directory:
+
+----
+npm install @hacksjs/universal
+yarn add @hacksjs/universal
+pnpm add @hacksjs/universal
+----
+
+////
+TODO: Add instructions for installing "latest" or specific versions.
+////

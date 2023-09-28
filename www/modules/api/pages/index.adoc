@@ -1,0 +1,19 @@
+= API documentation
+
+////
+
+Version 1 of the `@hacksjs/universal` package bundles 11 libraries:
+
+- `@hacksjs/universal/assertions`
+- `@hacksjs/universal/collections`
+- `@hacksjs/universal/dates-times`
+- `@hacksjs/universal/errors`
+- `@hacksjs/universal/functions`
+- `@hacksjs/universal/math`
+- `@hacksjs/universal/numbers`
+- `@hacksjs/universal/objects`
+- `@hacksjs/universal/strings`
+- `@hacksjs/universal/validation`
+- `@hacksjs/universal/values`
+
+////
