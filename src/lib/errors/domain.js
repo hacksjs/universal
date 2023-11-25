@@ -15,4 +15,6 @@ import { ValidationError } from './validation'
  */
 class DomainError extends ValidationError {}
 
-export { DomainError }
+export {
+  DomainError,
+}

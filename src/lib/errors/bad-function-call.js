@@ -14,4 +14,6 @@ import { ValidationError } from './validation'
  */
 class BadFunctionCallError extends ValidationError {}
 
-export { BadFunctionCallError }
+export {
+  BadFunctionCallError,
+}

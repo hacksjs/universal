@@ -13,4 +13,6 @@ import { ArithmeticError } from './arithmetic'
  */
 class RoundingError extends ArithmeticError {}
 
-export { RoundingError }
+export {
+  RoundingError,
+}

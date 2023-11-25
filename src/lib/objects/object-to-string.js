@@ -1,6 +1,6 @@
 // @ts-check
 
-import { object_to_string_map } from "../_/object-to-string-map"
+// import { object_to_string_map } from '../_/object-to-string-map'
 
 /**
  * Shortcut for `Object.prototype.toString()`.
@@ -16,4 +16,6 @@ const objectToString = (subject) => {
   // return Object.keys(object_to_string_map).find(key => object_to_string_map[key] === value) ?? null
 }
 
-export { objectToString }
+export {
+  objectToString,
+}

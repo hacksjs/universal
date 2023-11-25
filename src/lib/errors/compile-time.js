@@ -14,4 +14,6 @@ import { AbstractCustomError } from './abstract'
  */
 class CompileTimeError extends AbstractCustomError {}
 
-export { CompileTimeError }
+export {
+  CompileTimeError,
+}

@@ -29,14 +29,20 @@
  */
 const find = (object, path, fallback) => {
   if (typeof path === 'string') {
-    path = path.split(/[.\[\]\"]+/).filter(x => x)
+    path = path.split(/[.\[\]\"]+/).filter((x) => {
+      return x
+    })
   }
 
   if (path.length === 0) {
     return fallback
   }
 
-  const [head, ...tail] = path
+  const [
+    head,
+    ...tail
+  ] = path
+
   if (!(head in object)) {
     return fallback
   }
@@ -44,4 +50,6 @@ const find = (object, path, fallback) => {
   return find(object[head], tail, fallback)
 }
 
-export { find }
+export {
+  find,
+}

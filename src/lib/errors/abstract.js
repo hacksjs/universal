@@ -12,9 +12,13 @@ const captureStackTrace = (error) => {
   const stack = (new Error(msg)).stack ?? ''
   const stack_lines = stack.split('\n')
 
-  // Remove the lines about error object constructors.
-  const stack_lines_clean = [stack_lines[0], ...stack_lines.slice(3)].join('\n')
+  /* Remove the lines about error object constructors. */
+  const stack_lines_clean = [
+    stack_lines[0],
+    ...stack_lines.slice(3),
+  ].join('\n')
 
+  // eslint-disable-next-line no-param-reassign
   error.stack = stack_lines_clean
 }
 
@@ -27,25 +31,35 @@ const captureStackTrace = (error) => {
  * @returns {void} No return value.
  */
 const mergeStackTraces = (replacement_error, original_error) => {
-  // Capture stacks from `Error.prototype.stack`.
+  /* Capture stacks from `Error.prototype.stack`. */
   const original_stack = original_error.stack ?? ''
   const replacement_stack = replacement_error.stack
 
   const original_stack_lines = original_stack.split('\n')
   const replacement_stack_lines = replacement_stack.split('\n')
 
-  // There may be some overlap in the stack trace of the two `Error` instances.
-  // For a cleaner stack trace, we remove lines from `replacement_error` that
-  // already exist in `original_error`.
+  /*
+  There may be some overlap in the stack trace of the two `Error` instances.
+  For a cleaner stack trace, we remove lines from `replacement_error` that
+  already exist in `original_error`.
+  */
+
   const replacement_stack_lines_unique = []
+
   replacement_stack_lines.forEach((line) => {
     if (original_stack_lines.includes(line)) {
       return
     }
+
     replacement_stack_lines_unique.push(line)
   })
 
-  const merged_stack_lines = [...replacement_stack_lines_unique, ...original_stack_lines]
+  const merged_stack_lines = [
+    ...replacement_stack_lines_unique,
+    ...original_stack_lines,
+  ]
+
+  // eslint-disable-next-line no-param-reassign
   replacement_error.stack = merged_stack_lines.join('\n')
 }
 
@@ -66,6 +80,7 @@ const mergeStackTraces = (replacement_error, original_error) => {
  * class MyError extends AbstractCustomError
  */
 class AbstractCustomError extends Error {
+
   /**
    * @param {any} [message] Error object or value.
    * @param {Error} [original_error] Original `Error` instance to replace.
@@ -73,29 +88,41 @@ class AbstractCustomError extends Error {
   constructor (message, original_error) {
 
     if (message instanceof Error) {
+      // eslint-disable-next-line no-param-reassign
       original_error = message
+      // eslint-disable-next-line prefer-destructuring, no-param-reassign
       message = original_error.message
     }
 
-    // Pass arguments to parent constructor.
-    // https://mzl.la/2MgjT4z
+    /*
+    Pass arguments to parent constructor.
+    https://mzl.la/2MgjT4z
+    */
+
     super(message)
 
-    // Set the `name` property from `constructor.name`.
-    //
-    // Use `Object.defineProperty()` here to align with the native behavior of
-    // `Object.getOwnPropertyDescriptor(Error.prototype, 'name')`.
+    /*
+    Set the `name` property from `constructor.name`.
+
+    Use `Object.defineProperty()` here to align with the native behavior of
+    `Object.getOwnPropertyDescriptor(Error.prototype, 'name')`.
+    */
+
     Object.defineProperty(this, 'name', {
-      configurable: true,
-      enumerable: false,
-      value: this.constructor.name,
-      writable: true,
+      'configurable': true,
+      'enumerable': false,
+      'value': this.constructor.name,
+      'writable': true,
     })
 
-    // If V8's proprietary `Error.captureStackTrace` API is available, use it to
-    // build stack trace information. https://v8.dev/docs/stack-trace-api
+    /*
+    If V8's proprietary `Error.captureStackTrace` API is available, use it to
+    build stack trace information. https://v8.dev/docs/stack-trace-api
+    */
+
     if (typeof Error.captureStackTrace === 'function') {
       Error.captureStackTrace(this, this.constructor)
+
       if (original_error) {
         mergeStackTraces(this, original_error)
       }
@@ -103,13 +130,20 @@ class AbstractCustomError extends Error {
       return
     }
 
-    // Capture stack trace information for other JavaScript engines that don't
-    // support `Error.captureStackTrace`.
+    /*
+    Capture stack trace information for other JavaScript engines that don't
+    support `Error.captureStackTrace`.
+    */
+
     captureStackTrace(this)
+
     if (original_error) {
       mergeStackTraces(this, original_error)
     }
   }
+
 }
 
-export { AbstractCustomError }
+export {
+  AbstractCustomError,
+}

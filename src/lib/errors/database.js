@@ -13,4 +13,6 @@ import { ResourceError } from './resource'
  */
 class DatabaseError extends ResourceError {}
 
-export { DatabaseError }
+export {
+  DatabaseError,
+}

@@ -13,4 +13,6 @@ import { AbstractCustomError } from './abstract'
  */
 class ResourceError extends AbstractCustomError {}
 
-export { ResourceError }
+export {
+  ResourceError,
+}

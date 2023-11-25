@@ -38,8 +38,10 @@ const deepen = (object) => {
     const parts = objectPath.split('.')
 
     let target = output
+
     while (parts.length > 1) {
       const part = parts.shift()
+
       target = target[part] = target[part] || {}
     }
 
@@ -49,4 +51,6 @@ const deepen = (object) => {
   return output
 }
 
-export { deepen }
+export {
+  deepen,
+}

@@ -13,4 +13,6 @@ import { ParameterError } from './parameter'
  */
 class UnexpectedParameterError extends ParameterError {}
 
-export { UnexpectedParameterError }
+export {
+  UnexpectedParameterError,
+}

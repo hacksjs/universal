@@ -13,4 +13,6 @@ import { AbstractCustomError } from './abstract'
  */
 class ValidationError extends AbstractCustomError {}
 
-export { ValidationError }
+export {
+  ValidationError,
+}

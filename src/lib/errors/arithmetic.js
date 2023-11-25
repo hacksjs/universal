@@ -13,4 +13,6 @@ import { LogicError } from './logic'
  */
 class ArithmeticError extends LogicError {}
 
-export { ArithmeticError }
+export {
+  ArithmeticError,
+}

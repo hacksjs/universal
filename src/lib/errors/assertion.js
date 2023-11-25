@@ -13,4 +13,6 @@ import { ValidationError } from './validation'
  */
 class AssertionError extends ValidationError {}
 
-export { AssertionError }
+export {
+  AssertionError,
+}

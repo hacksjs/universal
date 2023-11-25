@@ -14,4 +14,6 @@ import { ValidationError } from './validation'
  */
 class UnexpectedResultError extends ValidationError {}
 
-export { UnexpectedResultError }
+export {
+  UnexpectedResultError,
+}

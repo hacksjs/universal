@@ -2,9 +2,7 @@
 
 import { afterEach, beforeEach, describe, expect, test } from '../../_/framework'
 
-import {
-  AbstractCustomError,
-
+import { AbstractCustomError,
   ArithmeticError,
   AssertionError,
   BadFunctionCallError,
@@ -18,13 +16,12 @@ import {
   OffByOneError,
   ParameterError,
   ResourceError,
-  RuntimeError,
   RoundingError,
+  RuntimeError,
   UnexpectedParameterError,
   UnexpectedResultError,
   ValidationError,
-  ZeroDivisionError,
-} from '../../../dist/lib/errors'
+  ZeroDivisionError } from '../../../dist/lib/errors'
 
 // Define a custom error type for the purpose of testing
 // the constructor logic of `AbstractCustomError`.
@@ -72,7 +69,11 @@ test_error_types.forEach((TestErrorType) => {
     // Keep a reference to Error.captureStackTrace so we can restore it.
     const v8captureStackTrace = Error.captureStackTrace
 
-    const booleans = [true, false]
+    const booleans = [
+      true,
+      false,
+    ]
+
     booleans.forEach((isCaptureStackTraceAvailable) => {
       const availability = isCaptureStackTraceAvailable ? 'available' : 'unavailable'
 

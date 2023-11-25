@@ -14,4 +14,6 @@ import { ResourceError } from './resource'
  */
 class FilesystemError extends ResourceError {}
 
-export { FilesystemError }
+export {
+  FilesystemError,
+}

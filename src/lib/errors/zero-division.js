@@ -14,4 +14,6 @@ import { ArithmeticError } from './arithmetic'
  */
 class ZeroDivisionError extends ArithmeticError {}
 
-export { ZeroDivisionError }
+export {
+  ZeroDivisionError,
+}

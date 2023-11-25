@@ -14,4 +14,6 @@ import { LogicError } from './logic'
  */
 class OffByOneError extends LogicError {}
 
-export { OffByOneError }
+export {
+  OffByOneError,
+}

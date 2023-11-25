@@ -43,13 +43,12 @@ const flatten = (object) => {
       const type = Object.prototype.toString.call(value)
 
       const is_array = Array.isArray(value)
-      const is_object = (
-        type === '[object Object]' ||
-        type === '[object Array]'
-      )
+      const is_object
+        = type === '[object Object]'
+        || type === '[object Array]'
 
       const newKey = prev
-        ? prev + '.' + key
+        ? `${prev}.${key}`
         : key
 
       if (!is_array && is_object && Object.keys(value).length) {
@@ -65,4 +64,6 @@ const flatten = (object) => {
   return output
 }
 
-export { flatten }
+export {
+  flatten,
+}

@@ -13,4 +13,6 @@ import { ParameterError } from './parameter'
  */
 class InvalidParameterError extends ParameterError {}
 
-export { InvalidParameterError }
+export {
+  InvalidParameterError,
+}

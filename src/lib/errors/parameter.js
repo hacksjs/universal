@@ -13,4 +13,6 @@ import { ValidationError } from './validation'
  */
 class ParameterError extends ValidationError {}
 
-export { ParameterError }
+export {
+  ParameterError,
+}

@@ -13,4 +13,6 @@ import { AbstractCustomError } from './abstract'
  */
 class LogicError extends AbstractCustomError {}
 
-export { LogicError }
+export {
+  LogicError,
+}

@@ -13,4 +13,6 @@ import { AbstractCustomError } from './abstract'
  */
 class RuntimeError extends AbstractCustomError {}
 
-export { RuntimeError }
+export {
+  RuntimeError,
+}
